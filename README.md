@@ -21,6 +21,8 @@ and descriptors (within 0.1% error) as OpenCV.
 NOTE: If you have suggestions for how to improve performance (namely the image
 convolution and image half-sampling) please email me or make a pull request!
 
+I would also like to thank Pablo Alcantarilla and Pierre Moulon for help and encouragement in creating this fork of akaze.
+
 ## Contact Info
 
 If you have questions about this particular implementation, find a bug, or have an improvement suggested please email Chris Sweeney at cmsweeney@cs.ucsb.edu
