@@ -66,7 +66,7 @@ void SeparableConvolution2d(const RowMatrixXf& image,
   // each row. However, care must be taken at the top and bottom borders.
   const RowVectorXf reverse_kernel_y = kernel_y.reverse();
 
-  if (border_type == BorderType::REFLECT) {
+  if (border_type == REFLECT) {
     for (int i = 0; i < half_size; i++) {
       const int forward_size = i + half_size + 1;
       const int reverse_size = full_size - forward_size;
@@ -118,7 +118,7 @@ void SeparableConvolution2d(const RowMatrixXf& image,
   // as a sliding indow, we use the row pixels as a sliding window around the
   // filter. We prepend and append the proper border values so that we are sure
   // to end up with the correct convolved values.
-  if (border_type == BorderType::REFLECT) {
+  if (border_type == REFLECT) {
     RowVectorXf temp_row(image.cols() + full_size - 1);
 #ifdef AKAZE_USE_OPENMP
 #pragma omp parallel for firstprivate(temp_row)
@@ -186,9 +186,9 @@ void ScharrDerivative(const RowMatrixXf& image,
   }
 
   if (x_deg == 1) {
-    SeparableConvolution2d(image, kernel1, kernel2, BorderType::REFLECT, out);
+    SeparableConvolution2d(image, kernel1, kernel2, REFLECT, out);
   } else {
-    SeparableConvolution2d(image, kernel2, kernel1, BorderType::REFLECT, out);
+    SeparableConvolution2d(image, kernel2, kernel1, REFLECT, out);
   }
   return;
 }
@@ -212,6 +212,6 @@ void GaussianBlur(const RowMatrixXf& image,
   SeparableConvolution2d(image,
                          gauss_kernel,
                          gauss_kernel,
-                         BorderType::REPLICATE,
+                         REPLICATE,
                          out);
 }

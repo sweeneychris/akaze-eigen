@@ -73,7 +73,7 @@ void ConvertCImgToEigen(const cimg_library::CImg<float>& image,
 // numbers.
 int HammingDistance(const libAKAZE::BinaryVectorX& desc1,
                     const libAKAZE::BinaryVectorX& desc2) {
-  static constexpr unsigned char pop_count_table[] = {
+  static const unsigned char pop_count_table[] = {
     0, 1, 1, 2, 1, 2, 2, 3, 1, 2, 2, 3, 2, 3, 3, 4, 1, 2, 2, 3, 2, 3, 3, 4, 2,
     3, 3, 4, 3, 4, 4, 5, 1, 2, 2, 3, 2, 3, 3, 4, 2, 3, 3, 4, 3, 4, 4, 5, 2, 3,
     3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 1, 2, 2, 3, 2, 3, 3, 4, 2, 3, 3,
