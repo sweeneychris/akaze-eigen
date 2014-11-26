@@ -40,7 +40,7 @@
 typedef Eigen::Matrix<float, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor>
     RowMatrixXf;
 
-enum class BorderType {
+enum BorderType {
   REFLECT = 0,
   REPLICATE = 1,
   DEFAULT = REFLECT

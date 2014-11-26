@@ -15,6 +15,7 @@
 #include "AKAZEConfig.h"
 #include "fed.h"
 #include "nldiffusion_functions.h"
+#include <stdint.h>
 /* ************************************************************************* */
 namespace libAKAZE {
 
