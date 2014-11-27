@@ -18,7 +18,7 @@ implementation. This is because OpenCV has many hand-written SIMD optimizations
 for image processing. However, this implementation does give the same keypoints
 and descriptors (within 0.1% error) as OpenCV.
 
-NOTE: If you have suggestions for how to improve performance (namely the image
+**NOTE:** If you have suggestions for how to improve performance (namely the image
 convolution and image half-sampling) please email me or make a pull request!
 
 I would also like to thank Pablo Alcantarilla and Pierre Moulon for help and encouragement in creating this fork of akaze.
