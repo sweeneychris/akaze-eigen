@@ -55,7 +55,7 @@ int main(int argc, char* argv[]) {
   // Variables
   libAKAZE::AKAZEOptions options;
   std::string img_path1, img_path2, homography_path;
-  float ratio = 0.0, rfactor = .60;
+  float ratio = 0.0;
   int nkpts1 = 0, nkpts2 = 0, nmatches = 0, ninliers = 0, noutliers = 0;
 
   std::vector<libAKAZE::AKAZEKeypoint> kpts1, kpts2;

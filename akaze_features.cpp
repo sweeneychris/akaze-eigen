@@ -46,7 +46,7 @@ int main(int argc, char* argv[]) {
   std::string img_path, kpts_path;
 
   // Variable for computation times.
-  double tconstructor = 0.0, tdet = 0.0, tdesc = 0.0;
+  double tdet = 0.0, tdesc = 0.0;
 
   // Parse the input command line options
   if (parse_input_options(options, img_path, kpts_path, argc, argv)) {
